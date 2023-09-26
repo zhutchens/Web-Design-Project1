@@ -71,7 +71,8 @@ div.sections, div.icons, p.copyright {
 }
 
 .icons {
-font-size: 2rem;}
+    font-size: 2rem;
+}
 
 .sections a:active, .sections a:hover {
     border-bottom: 2px solid black;
