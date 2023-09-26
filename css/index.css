@@ -3,8 +3,14 @@
     --body-color: #fafafa;
     --footer-color: #9394a5; 
     --text-color: #484b6a;
+    --color-black: #000000; 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .header-img {
     height: 100px;
@@ -18,14 +24,17 @@ p {
 body {
     background-color: var(--body-color);
     line-height: 1.5;
+    text-align: center;
+    font-family: 'Lato', sans-serif; 
+    color: var(--text-color);
 }
 
 nav {
     display: flex;
-    gap: 1.5rem;
-    font-weight: 1000;
+    gap: 1rem;
+    font-weight: 700;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 nav a {
@@ -34,31 +43,74 @@ nav a {
 }
 
 .nav-1:active, .nav-1:hover, .nav-2:hover, .nav-2:active, .nav-3:active, .nav-3:hover {
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--color-black);
 }
 
 footer {
     background-color: var(--footer-color);
-
-}
-
-ul a:first-of-type, ul a:nth-of-type(2), ul a:nth-of-type(3), ul a:nth-of-type(4) {
-    color: var(--text-color);
-    font-weight: 800;
-    text-decoration: none;
-    border-bottom: 2px solid var(--accent-color);
-}
-
-footer ul {
-    list-style: none;
 }
 
 p.copyright {
-    columns: var(--text-color);
-    text-align: center;
+    color: var(--text-color);
     opacity: 0.5;
 }
 
+div.sections, div.icons, p.copyright {
+    text-align: center;
+    padding: 0.5rem; 
+}
+
+.sections a {
+    color: var(--color-black);
+    text-decoration: none;
+    padding: 0.2rem;
+}
+
+.sectons, .icons {
+    margin: 10px;
+}
+
+.icons {
+font-size: 2rem;}
+
+.sections a:active, .sections a:hover {
+    border-bottom: 2px solid black;
+}
+
+.contact a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    padding: 5px; 
+}
+
+h4 {
+    padding: 5px;
+}
+
+.contact a:active, .contact a:hover {
+    border-bottom: 2px solid black;
+}
+
+.icons a {
+    padding: 0.5rem;
+}
+
+input {
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+#message {
+    padding: 20px;
+    border-radius: 6px;
+}
 
 header {
     background-color: var(--header-color);
