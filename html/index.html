@@ -23,13 +23,13 @@
     </header>
     <br>
     <section class="main">
+        <h1>Hello there!</h1>
         <section class="hero">
-            <br>
-            <p>Hello, my name is Zane Hutchens. I'm currently majoring in Computer Science with a concentration in Data Science.</p>
+            <p>My name is Zane Hutchens. I'm currently majoring in Computer Science with a concentration in Data Science.</p>
         </section>
         <section class="about me" id="about">
             <br>
-            <h1>About Me</h1>
+            <h3>About Me</h3>
             <p class="p-about-me">I'm currently a student at the University of North Carolina at Charlotte majoring in Computer Science. Aside from academic activites, I enjoy riding my bicycle, drawing, playing games, and hanging out with my cat.</p>
             <p class="p-about-me">I'm currently concentrating in Data Science, and I have experience in data visualization, data analysis, cloud computing, data processing, and machine learning.</p>
             <p class="p-about-me">I'm skilled in ggplot2, Tableau, Python, Java, Apache Hadoop, Linux/Unix, and Apache Spark.</p>
@@ -37,27 +37,25 @@
         </section>
         <section class="contact" id="contact">
             <br>
-            <h1>Contact Information</h1>
+            <h3>Contact Information</h3>
             <a href="mailto: zhut654@gmail.com">Email</a>
             <a href="tel: +13368033608">Phone</a>
             <form action="">
                 <h4>Contact Form</h4>
-                <label for="firstname"></label>
-                <input type="text" name="firstname" id="firstname" placeholder=" First Name...">
-                <br>
-                <br>
-                <label for="lastname"></label>
-                <input type="text" name="lastname" id="lastname" placeholder=" Last Name...">
-                <br>
-                <br>
-                <label for="email"></label>
-                <input type="text" name="email" id="email" placeholder=" Email...">
-                <br>
-                <br>
-                <label for="message"></label>
-                <textarea name="textbox" id="message" cols="30" rows="10"></textarea>
-                <br>
-                <br>
+                <div class="name-email-container">
+                    <div class="name-label">
+                        <label for="name"></label>
+                        <input type="text" name="firstname" id="name" placeholder=" Name...">
+                    </div>
+                    <div class="email-label">
+                        <label for="email"></label>
+                        <input type="text" name="email" id="email" placeholder=" Email...">
+                    </div>
+                </div>
+                <div class="message-label">
+                    <label for="message"></label>
+                    <textarea name="textbox" id="message" cols="41" rows="10" placeholder="Your message here..."></textarea>
+                </div>
                 <input type="button" id="button" value="Submit">
             </form>
             <br>
