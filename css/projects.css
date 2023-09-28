@@ -1,18 +1,20 @@
 :root {
-    --header-color: #e4e5f1; 
+    --main-color: #E6E6E6; 
     --body-color: #fafafa;
     --footer-color: #9394a5; 
     --text-color: #484b6a;
     --color-black: #000000; 
+    --header-color: #BFBFBF;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .header-img {
-    height: 50px;
+    height: 80px;
     width: auto;
 }
 
@@ -27,16 +29,17 @@ header {
 nav a {
     color: var(--text-color);
     text-decoration: none;
+    font-size: 14px;
 }
 
 nav a:active, nav a:hover {
     border-bottom: 2px solid black;
+    font-weight: 500;
 }
 
 nav {
     gap: 1rem; 
     display: flex;
-    font-weight: 700;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
 }
@@ -44,12 +47,6 @@ nav {
 img {
     height: auto;
     width: 200px;
-}
-
-.project-1, .project-2, .project-3, .project-4, .project-5 {
-    border: 2px solid black;
-    border-radius: 8px;
-    margin: 1rem;
 }
 
 body {
@@ -70,6 +67,10 @@ footer {
     text-align: center;
 }
 
+footer div.home {
+    padding-top: 0.5rem;
+}
+
 footer p {
     opacity: 0.5;
     color: var(--text-color);
@@ -78,8 +79,10 @@ footer p {
 
 .home a {
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--color-black);
+    font-size: 18px;
+    padding: 0.2rem;
 }
 
 .home a:active, .home a:hover {
@@ -87,7 +90,7 @@ footer p {
 }
 
 .icons a {
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 
 .icons {
@@ -97,3 +100,95 @@ footer p {
 .home, .icon {
     margin: 10px;
 }
+
+article {
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+main {
+    background-color: var(--main-color);
+    padding-top: 1px;
+    padding-bottom: 0.1rem;
+
+}
+
+.home, .icons {
+    margin: 10px;
+}
+
+@media (min-width: 800px) {
+    * {
+        margin-top: 0;
+        margin-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header-img {
+        height: 120px;
+        width: auto;
+    }
+
+    nav {
+        gap: 1rem; 
+        display: flex;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    nav a {
+        padding: 2rem;
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 2.074rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .header-img {
+        height: 100px;
+        width: auto;
+    }
+
+    nav a {
+        padding: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media (min-height: 1200px) {
+    .header-img {
+        height: 140px;
+        width: auto;
+    }
+
+    nav a {
+        padding: 3rem;
+        font-size: 24px;
+    }
+
+    .home a {
+        font-size: 24px;
+        padding: 2rem;
+    }
+
+    .icons a {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
+
+

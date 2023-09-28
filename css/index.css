@@ -1,9 +1,10 @@
 :root {
-    --header-color: #e4e5f1; 
+    --header-color: #BFBFBF; 
     --body-color: #fafafa;
     --footer-color: #9394a5; 
     --text-color: #484b6a;
     --color-black: #000000; 
+    --main-color: #E6E6E6;
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 .header-img {
-    height: 100px;
+    height: 80px;
     width: auto;
 }
 
@@ -21,12 +22,30 @@ p {
     color: var(--text-color);
 }
 
-body {
-    background-color: var(--body-color);
-    line-height: 1.5;
+h1, h3 {
     text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.424rem;
+}
+
+h4 {
+    font-size: 1.266rem;
+}
+
+body {
+    background-color: var(--main-color);
+    line-height: 2;
+    text-align: left;
     font-family: 'Lato', sans-serif; 
     color: var(--text-color);
+    font-size: 18px;
 }
 
 nav {
@@ -40,6 +59,7 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--text-color);
+    font-size: 14px;
 }
 
 .nav-1:active, .nav-1:hover, .nav-2:hover, .nav-2:active, .nav-3:active, .nav-3:hover {
@@ -64,10 +84,12 @@ div.sections, div.icons, p.copyright {
     color: var(--color-black);
     text-decoration: none;
     padding: 0.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
 }
 
 .sectons, .icons {
-    margin: 19px;
+    margin: 0.01em;
 }
 
 .icons {
@@ -79,7 +101,7 @@ div.sections, div.icons, p.copyright {
 }
 
 .contact a {
-    padding: 0.5rem;
+    padding: 0.3rem;
     text-decoration: none;
     color: var(--text-color);
     font-family: 'Lato', sans-serif;
@@ -90,7 +112,7 @@ div.sections, div.icons, p.copyright {
 }
 
 .icons a {
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 
 input {
@@ -124,7 +146,36 @@ form div.name-email-container {
     padding-right: 1rem;
 }
 
-.main {
-    padding-left: 1rem;
-    padding-right: 1rem;
+textarea {
+    width: auto;
+    height: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 15px;
+    margin: 5px;
+}
+
+#button {
+    border: 2px solid black;
+    background-color: white;
+}
+
+form {
+    text-align: center;
+}
+
+.contact div:first-of-type {
+    text-align: center;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+h4 {
+    text-align: center;
 }
