@@ -100,7 +100,7 @@ div.sections, div.icons, p.copyright {
     border-bottom: 2px solid black;
 }
 
-.contact a {
+.grid-container a {
     padding: 0.3rem;
     text-decoration: none;
     color: var(--text-color);
@@ -178,4 +178,69 @@ footer p {
 
 h4 {
     text-align: center;
+}
+
+.grid-container {
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .header-img {
+        width: 150px;
+        height: auto;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 2rem;
+    }
+
+    div.heading-elements article.hero {
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        line-height: 1.5;
+        gap: 2rem; 
+        padding: 1rem;
+    }
+
+    .about-heading {
+        grid-column: span 4;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-heading, .contactinfo {
+        grid-column: span 3;
+    }
+
+    .contact-form-header {
+        padding-top: 2rem;
+        grid-column: span 1;
+        margin: auto;
+    }
+
+    .name-email-container, .message-label {
+        margin: auto;
+        padding-top: 2rem;
+        grid-column: span 1;
+    }
+
+    .email-label {
+        padding-top: 6rem;
+    }
+
+    .button {
+        grid-column: span 3;
+    }
 }

@@ -65,6 +65,7 @@ p {
 footer {
     background-color: var(--footer-color);
     text-align: center;
+    padding: 2rem;
 }
 
 footer div.home {
@@ -142,6 +143,10 @@ main {
         gap: 1rem; 
         display: flex;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .project-4, .project-5 {
+        grid-column: span 3;
     }
 
     nav a {
