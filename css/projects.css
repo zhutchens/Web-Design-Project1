@@ -1,10 +1,10 @@
 :root {
     --main-color: #E6E6E6; 
     --body-color: #fafafa;
-    --footer-color: #9394a5; 
-    --text-color: #484b6a;
+    --footer-color: #E2AF91; 
+    --text-color: #000000;
     --color-black: #000000; 
-    --header-color: #BFBFBF;
+    --header-color: #E2AF91;
 }
 
 * {
@@ -42,6 +42,7 @@ nav {
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
+    font-weight: 700;
 }
 
 img {
@@ -65,7 +66,7 @@ p {
 footer {
     background-color: var(--footer-color);
     text-align: center;
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
 footer div.home {
@@ -92,6 +93,7 @@ footer p {
 
 .icons a {
     padding: 0.3rem;
+    color: #273248;
 }
 
 .icons {
@@ -111,14 +113,17 @@ article {
 }
 
 main {
-    background-color: var(--main-color);
+    background-color: #273248;
     padding-top: 1px;
     padding-bottom: 0.1rem;
-
 }
 
 .home, .icons {
     margin: 10px;
+}
+
+.grid {
+    background-color: #273248;
 }
 
 @media (min-width: 800px) {

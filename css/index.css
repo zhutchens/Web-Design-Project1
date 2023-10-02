@@ -1,10 +1,10 @@
 :root {
-    --header-color: #BFBFBF; 
+    --header-color: #E2AF91; 
     --body-color: #fafafa;
-    --footer-color: #9394a5; 
-    --text-color: #484b6a;
+    --footer-color: #E2AF91; 
+    --text-color: #000000;
     --color-black: #000000; 
-    --main-color: #E6E6E6;
+    --main-color: #273248;
 }
 
 * {
@@ -41,10 +41,11 @@ h4 {
 
 body {
     background-color: var(--main-color);
+    background-blend-mode: lighten;
     line-height: 2;
     text-align: left;
     font-family: 'Lato', sans-serif; 
-    color: var(--text-color);
+    color: #AF4F41;
     font-size: 18px;
 }
 
@@ -68,6 +69,7 @@ nav a {
 
 footer {
     background-color: var(--footer-color);
+    background-blend-mode: lighten;
 }
 
 p.copyright {
@@ -77,7 +79,7 @@ p.copyright {
 
 div.sections, div.icons, p.copyright {
     text-align: center;
-    padding: 0.5rem; 
+    padding: 0.1rem; 
 }
 
 .sections a {
@@ -103,7 +105,7 @@ div.sections, div.icons, p.copyright {
 .grid-container a {
     padding: 0.3rem;
     text-decoration: none;
-    color: var(--text-color);
+    color: #AF4F41;
     font-family: 'Lato', sans-serif;
 }
 
@@ -113,6 +115,7 @@ div.sections, div.icons, p.copyright {
 
 .icons a {
     padding: 0.3rem;
+    color: var(--main-color);
 }
 
 input {
@@ -131,6 +134,7 @@ input {
 
 header {
     background-color: var(--header-color);
+    background-blend-mode: lighten;
     display: flex;
     padding: 2rem;
     justify-content: space-between;
@@ -203,13 +207,10 @@ h4 {
 }
 
 .heading-elements {
-    background-image: url("../imgs/data.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    height: 60vh;
-    width: auto;
-    margin: 0;
+    background-color: #AF4F41;
+    height: 70vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-blend-mode: lighten;
 }
 
 .heading {
@@ -219,7 +220,7 @@ h4 {
     align-items: center;
     height: 100%;
     width: 100%;
-    color: white;
+    color: #E2AF91;
 }
 
 div.hero p {
@@ -230,6 +231,14 @@ div.hero p {
     font-family: 'Lato', sans-serif;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.p-about-me, .h4-about-me {
+    color: #AF4F41;
+}
+
+#name, #email, #message, #button {
+    background-color: #E2AF91;
 }
 
 @media (min-width: 800px) {
@@ -268,5 +277,13 @@ div.hero p {
         justify-content: center;
         padding: 1rem;
         gap: 1rem;
+    }
+
+    .introduction, .skills, .future-plans, .interests {
+        border: none;
+        background-color: #E2AF91;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
     }
 }
