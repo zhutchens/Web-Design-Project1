@@ -21,6 +21,7 @@
 header {
     display: flex;
     background-color: var(--header-color);
+    background-blend-mode: lighten;
     padding: 2rem;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +35,6 @@ nav a {
 
 nav a:active, nav a:hover {
     border-bottom: 2px solid black;
-    font-weight: 500;
 }
 
 nav {
@@ -198,6 +198,17 @@ main {
 
     footer p {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    nav {
+        flex-direction: column;
+        padding-right: 2.7rem;
+    }
+
+    .home a {
+        font-size: 16px;
     }
 }
 

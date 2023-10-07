@@ -45,7 +45,7 @@ body {
     line-height: 2;
     text-align: left;
     font-family: 'Lato', sans-serif; 
-    color: #AF4F41;
+    color: white;
     font-size: 18px;
 }
 
@@ -105,7 +105,7 @@ div.sections, div.icons, p.copyright {
 .grid-container a {
     padding: 0.3rem;
     text-decoration: none;
-    color: #AF4F41;
+    color: white;
     font-family: 'Lato', sans-serif;
 }
 
@@ -220,7 +220,7 @@ h4 {
     align-items: center;
     height: 100%;
     width: 100%;
-    color: #E2AF91;
+    color: white;
 }
 
 div.hero p {
@@ -234,11 +234,15 @@ div.hero p {
 }
 
 .p-about-me, .h4-about-me {
-    color: #AF4F41;
+    color: white;
 }
 
 #name, #email, #message, #button {
-    background-color: #E2AF91;
+    background-color: white;
+}
+
+#name, #email, #message {
+    width: 80vw;
 }
 
 @media (min-width: 800px) {
@@ -268,6 +272,10 @@ div.hero p {
         grid-column: span 4;
     }
 
+    #email {
+        margin-top: 1.1rem;
+    }
+
     p {
         font-size: 24px;
     }
@@ -281,9 +289,69 @@ div.hero p {
 
     .introduction, .skills, .future-plans, .interests {
         border: none;
-        background-color: #E2AF91;
+        background-color: white;
         padding: 1rem;
         border-radius: 8px;
         text-align: center;
+    }
+
+    #name, #email {
+        width: 40vw;
+    }
+
+    #message {
+        width: 81vw;
+    }  
+
+    .p-about-me, .h4-about-me {
+        color: black;
+    }
+}
+
+@media (min-width: 600px) {
+    .header-img {
+        height: 100px;
+        width: auto;
+    }
+
+    nav a {
+        padding: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    nav {
+        flex-direction: column;
+        padding-right: 2.7rem;
+    }
+
+    .sections a {
+        font-size: 16px;
+    }
+}
+
+@media (min-height: 1200px) {
+    .header-img {
+        height: 140px;
+        width: auto;
+    }
+
+    nav a {
+        padding: 3rem;
+        font-size: 24px;
+    }
+
+    .home a {
+        font-size: 24px;
+        padding: 2rem;
+    }
+
+    .icons a {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 18px;
     }
 }
